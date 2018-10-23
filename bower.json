@@ -1,0 +1,26 @@
+{
+  "name": "skeleton-pug-sass",
+  "description": "Template for Trade Website Project",
+  "main": "gulpfile.js",
+  "authors": [
+    "Rodan Luzuriaga"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^5.4.1",
+    "jquery": "^3.3.1",
+    "components-font-awesome": "^5.0.6"
+  },
+  "resolutions": {
+    "font-awesome": "^5.4.1",
+    "jquery": "^3.3.1"
+  }
+}
