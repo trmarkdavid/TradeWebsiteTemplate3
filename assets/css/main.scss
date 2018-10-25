@@ -1,8 +1,403 @@
 @import '_mixins';
 
+$primary-font: 'Lato', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
+
 html {
-
+    font-size: 62.5%;
+    font-family: $primary-font;
 }
-body {
 
+header {
+    text-align: center;
+    padding: 40px;
+    border-bottom: 2px solid #c4c4c4;
+}
+
+nav .nav-link {
+    font-family: $primary-font;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #727272;
+    padding: .2rem 3rem !important;
+}
+
+.boxshadow {
+    -webkit-box-shadow: 0px 0px 9px 2px rgba(28,28,28,0.26);
+    -moz-box-shadow: 0px 0px 9px 2px rgba(28,28,28,0.26);
+    box-shadow: 0px 0px 9px 2px rgba(28,28,28,0.26);
+}
+
+/*===== Hero Section =====*/
+#hero-section {
+    background-image: url('../images/hero_bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    color: #FFF;
+
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 12rem;
+
+        h1 {
+            font-family: $primary-font;
+            font-weight: bold;
+            font-size: 6rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 3rem;
+            font-weight: 200;
+        }
+
+        .btn-success {
+            font-family: $secondary-font;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: left;
+            background-color: #ff7800;
+            border: 1px solid #FFF;
+            padding: 1rem 2.5rem;
+            margin-top: 3rem;
+            display: flex;
+            @include border-radius(0);
+            @include breakpoint(sm) {
+                font-size: 1.5rem;
+            }
+
+            img {
+                padding: 2rem 2rem 2rem 0;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }   
+}
+
+
+/*===== Fix4Me Verified Section =====*/
+#fix4meverified {
+    background-color: #c4c4c4;
+    display: flex;
+
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #FFF;
+        color: #f0614f;
+        margin: 5rem 2rem;
+        padding: 4rem 5rem;
+        font-family: $secondary-font;
+        @include breakpoint(md) {
+            margin: 9rem auto;
+        }
+
+        img {
+            margin-bottom: 4rem;
+            @include breakpoint(lg) {
+                margin-bottom: 0;
+            }
+        }
+
+        h2 {
+            font-family: $secondary-font;
+            font-size: 1.75rem;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+
+        .btn-success {
+            font-size: 2rem;
+            background-color: #f0614f;
+            border: 1px solid #FFF;
+            padding: 1rem 5rem;
+            margin-bottom: 4rem;
+            @include border-radius(4px);
+            @include breakpoint(lg) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/*===== Our Job Photos Section =====*/
+#jobphotos {
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 7rem;
+        @include breakpoint(sm) {
+            padding: 5rem 0;
+        }
+
+        h2 {
+            color: #02afce;
+            font-family: $primary-font;
+            font-size: 3.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .row {
+            overflow: hidden;
+            position: relative;
+            opacity: 0.75;
+
+            @include breakpoint(sm) {
+                width: 100%;
+            }
+
+            .center-img {
+                overflow: hidden;
+    
+                img {
+                    transform: translate(-50%, -50%);
+                    position: relative;
+                    left: 50%;
+                    top: 50%;
+                    min-width: 100%;
+                    min-height: 100%;
+                }
+            }
+        }
+
+        .btn-success {
+            font-family: $secondary-font;
+            font-size: 2.25rem;
+            background-color: #ff7800;
+            border: 1px solid #FFF;
+            padding: 1rem 2.5rem;
+            margin: 4rem auto 0 auto;
+            @include border-radius(0);
+
+            @include breakpoint(md) {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin: 0;
+                -webkit-box-shadow: 0px 0px 5px 2px rgba(125,119,125,0.6);
+                -moz-box-shadow: 0px 0px 5px 2px rgba(125,119,125,0.6);
+                box-shadow: 0px 0px 5px 2px rgba(125,119,125,0.6);
+            }
+        }
+    }
+}
+
+/*===== Trade Services Section =====*/
+#tradeservices {
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 7rem 7rem 10rem 7rem;
+        background-color: #02afce;
+
+        h2 {
+            color: #FFF;
+            font-family: $primary-font;
+            font-size: 3.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .trade-item {
+            background-color: #ebebeb;
+            font-family: $secondary-font;
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 1rem;
+            margin: 0.5rem;
+            @include border-radius(17px);
+
+            &.checked {
+                position: relative;
+                padding-right: 3rem;
+    
+                &::after {
+                    content: "\f00c";
+                    position: absolute;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    font-size: 0.6rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    padding: 0.25rem;
+                    background: #c1c3c7;
+                    border-radius: 50%;
+                    width: 17px;
+                    height: 17px;
+                    right: 7px;
+                    top: 10px;
+                }
+            }    
+
+            img {
+                margin-left: 0.75rem;
+            }
+        }
+
+        .btn-success {
+            font-family: $primary-font;
+            font-size: 1.5rem;
+            font-weight: bold;
+            background-color: #FFF;
+            border-color: #FFF;
+            color: #02afce;
+            padding: 0.75rem 2.5rem 0.75rem 2rem;
+            margin-top: 5rem;
+            @include border-radius(0);
+
+            .fas {
+                font-size: 2rem;
+                margin-right: 1.5rem;
+                vertical-align: middle;
+            }
+        }
+    }        
+}
+
+/*===== Our Recent Reviews Section =====*/
+#recentreviews {
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 9rem;
+        font-family: $primary-font;
+        @include breakpoint(sm) {
+            padding: 5rem 0;
+        }
+
+        h2 {
+            color: #02afce;
+            font-size: 3.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .rc-item {
+            margin: 2rem;
+            padding: 1rem;
+
+            .rc-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 1rem;
+
+                p {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    margin: 0;
+                    color: #545c67;
+                }
+            }
+            .rc-body {
+                text-align: left;
+
+                .title {
+                    font-size: 1.5rem;
+                    color: #02afce;
+                    margin-bottom: 0.25rem;
+                }
+                .description {
+                    font-size: 1.5rem;
+                    color: #545c67;
+                }
+            }
+        }
+
+        .btn-success {
+            font-family: $primary-font;
+            font-size: 1.5rem;
+            font-weight: bold;
+            background-color: #ff934b;
+            border-color: #ff934b;
+            color: #FFF;
+            padding: 0.75rem 2.5rem 0.75rem 2rem;
+            margin-top: 5rem;
+            @include border-radius(0);
+
+            .fas {
+                font-size: 2rem;
+                margin-right: 1.5rem;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+/*===== Our Service Areas Section =====*/
+#ourserviceareas {
+    background-color: #02afce;
+
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 3rem 7rem 5rem 11rem;
+        font-family: $primary-font;
+        color: #FFF;
+        @include breakpoint(sm) {
+            padding: 5rem 2rem;
+        }
+
+        h2 {
+            font-family: $primary-font;
+            font-size: 2.5rem;
+            font-weight: 100;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-family: $primary-font;
+            font-size: 2rem;
+            font-weight: 100;
+            margin-bottom: 1.25rem;
+        }
+
+        p {
+            font-family: $secondary-font;
+            font-size: 1.25rem;
+            font-weight: 100;
+        }
+
+        .btn-success {
+            font-family: $primary-font;
+            font-size: 1.5rem;
+            font-weight: bold;
+            background-color: transparent;
+            border: 1px solid #FFF;
+            color: #FFF;
+            padding: 0.75rem 2.5rem 0.75rem 2rem;
+            margin-top: 3rem;
+            @include border-radius(0);
+
+            .fas {
+                font-size: 2rem;
+                margin-right: 1.5rem;
+                vertical-align: middle;
+            }
+        }
+    }
 }

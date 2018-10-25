@@ -1,0 +1,416 @@
+html {
+    font-size: 62.5%;
+    font-family: "Lato", sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    border-bottom: 2px solid #c4c4c4;
+}
+
+nav .nav-link {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #727272;
+    padding: .2rem 3rem !important;
+}
+
+.boxshadow {
+    box-shadow: 0px 0px 9px 2px rgba(28, 28, 28, 0.26);
+}
+
+/*===== Hero Section =====*/
+#hero-section {
+    background-image: url("../images/hero_bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    color: #FFF;
+}
+
+#hero-section .center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 12rem;
+}
+
+#hero-section .center-content h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+#hero-section .center-content h3 {
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+#hero-section .center-content .btn-success {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    background-color: #ff7800;
+    border: 1px solid #FFF;
+    padding: 1rem 2.5rem;
+    margin-top: 3rem;
+    display: flex;
+    border-radius: 0;
+}
+
+@media (max-width: 767px) {
+    #hero-section .center-content .btn-success {
+        font-size: 1.5rem;
+    }
+}
+
+#hero-section .center-content .btn-success img {
+    padding: 2rem 2rem 2rem 0;
+}
+
+#hero-section .center-content .btn-success p {
+    margin-bottom: 0;
+}
+
+/*===== Fix4Me Verified Section =====*/
+#fix4meverified {
+    background-color: #c4c4c4;
+    display: flex;
+}
+
+#fix4meverified .center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #FFF;
+    color: #f0614f;
+    margin: 5rem 2rem;
+    padding: 4rem 5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 768px) {
+    #fix4meverified .center-content {
+        margin: 9rem auto;
+    }
+}
+
+#fix4meverified .center-content img {
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 992px) {
+    #fix4meverified .center-content img {
+        margin-bottom: 0;
+    }
+}
+
+#fix4meverified .center-content h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+#fix4meverified .center-content p {
+    font-size: 1.8rem;
+}
+
+#fix4meverified .center-content .btn-success {
+    font-size: 2rem;
+    background-color: #f0614f;
+    border: 1px solid #FFF;
+    padding: 1rem 5rem;
+    margin-bottom: 4rem;
+    border-radius: 4px;
+}
+
+@media (min-width: 992px) {
+    #fix4meverified .center-content .btn-success {
+        margin-bottom: 0;
+    }
+}
+
+/*===== Our Job Photos Section =====*/
+#jobphotos .center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 7rem;
+}
+
+@media (max-width: 767px) {
+    #jobphotos .center-content {
+        padding: 5rem 0;
+    }
+}
+
+#jobphotos .center-content h2 {
+    color: #02afce;
+    font-family: "Lato", sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+}
+
+#jobphotos .center-content .row {
+    overflow: hidden;
+    position: relative;
+    opacity: 0.75;
+}
+
+@media (max-width: 767px) {
+    #jobphotos .center-content .row {
+        width: 100%;
+    }
+}
+
+#jobphotos .center-content .row .center-img {
+    overflow: hidden;
+}
+
+#jobphotos .center-content .row .center-img img {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#jobphotos .center-content .btn-success {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.25rem;
+    background-color: #ff7800;
+    border: 1px solid #FFF;
+    padding: 1rem 2.5rem;
+    margin: 4rem auto 0 auto;
+    border-radius: 0;
+}
+
+@media (min-width: 768px) {
+    #jobphotos .center-content .btn-success {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        margin: 0;
+        box-shadow: 0px 0px 5px 2px rgba(125, 119, 125, 0.6);
+    }
+}
+
+/*===== Trade Services Section =====*/
+#tradeservices .center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 7rem 7rem 10rem 7rem;
+    background-color: #02afce;
+}
+
+#tradeservices .center-content h2 {
+    color: #FFF;
+    font-family: "Lato", sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+}
+
+#tradeservices .center-content .trade-item {
+    background-color: #ebebeb;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 17px;
+}
+
+#tradeservices .center-content .trade-item.checked {
+    position: relative;
+    padding-right: 3rem;
+}
+
+#tradeservices .center-content .trade-item.checked::after {
+    content: "\f00c";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 0.25rem;
+    background: #c1c3c7;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    right: 7px;
+    top: 10px;
+}
+
+#tradeservices .center-content .trade-item img {
+    margin-left: 0.75rem;
+}
+
+#tradeservices .center-content .btn-success {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #FFF;
+    border-color: #FFF;
+    color: #02afce;
+    padding: 0.75rem 2.5rem 0.75rem 2rem;
+    margin-top: 5rem;
+    border-radius: 0;
+}
+
+#tradeservices .center-content .btn-success .fas {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    vertical-align: middle;
+}
+
+/*===== Our Recent Reviews Section =====*/
+#recentreviews .center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 9rem;
+    font-family: "Lato", sans-serif;
+}
+
+@media (max-width: 767px) {
+    #recentreviews .center-content {
+        padding: 5rem 0;
+    }
+}
+
+#recentreviews .center-content h2 {
+    color: #02afce;
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+}
+
+#recentreviews .center-content .rc-item {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+#recentreviews .center-content .rc-item .rc-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#recentreviews .center-content .rc-item .rc-top p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #545c67;
+}
+
+#recentreviews .center-content .rc-item .rc-body {
+    text-align: left;
+}
+
+#recentreviews .center-content .rc-item .rc-body .title {
+    font-size: 1.5rem;
+    color: #02afce;
+    margin-bottom: 0.25rem;
+}
+
+#recentreviews .center-content .rc-item .rc-body .description {
+    font-size: 1.5rem;
+    color: #545c67;
+}
+
+#recentreviews .center-content .btn-success {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #ff934b;
+    border-color: #ff934b;
+    color: #FFF;
+    padding: 0.75rem 2.5rem 0.75rem 2rem;
+    margin-top: 5rem;
+    border-radius: 0;
+}
+
+#recentreviews .center-content .btn-success .fas {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    vertical-align: middle;
+}
+
+/*===== Our Service Areas Section =====*/
+#ourserviceareas {
+    background-color: #02afce;
+}
+
+#ourserviceareas .center-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 3rem 7rem 5rem 11rem;
+    font-family: "Lato", sans-serif;
+    color: #FFF;
+}
+
+@media (max-width: 767px) {
+    #ourserviceareas .center-content {
+        padding: 5rem 2rem;
+    }
+}
+
+#ourserviceareas .center-content h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+
+#ourserviceareas .center-content h3 {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 1.25rem;
+}
+
+#ourserviceareas .center-content p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+
+#ourserviceareas .center-content .btn-success {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    color: #FFF;
+    padding: 0.75rem 2.5rem 0.75rem 2rem;
+    margin-top: 3rem;
+    border-radius: 0;
+}
+
+#ourserviceareas .center-content .btn-success .fas {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    vertical-align: middle;
+}

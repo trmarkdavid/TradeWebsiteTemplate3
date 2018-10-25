@@ -2,7 +2,147 @@ extends ./layout/layout.pug
 
 block content
 
-  h2 It works!
+  section#hero-section
+    .center-content.container
+      .row.w-100
+        .col-6
+          h1 Sunny Coast Handyman
+          button.btn.btn-success(type='button') 
+            img.mx-auto(src='assets/images/checkbox.png', alt='Checkbox', title='Checkbox')
+            p
+              | Make a booking / 
+              br
+              | Request a quote
+        .col-6 X
+
+
+  section#fix4meverified
+    .center-content.container.boxshadow
+      .row.align-items-center.w-100
+        .col-sm-12.col-lg-3
+          img.mx-auto(src='assets/images/fix4me2orange.png', alt='Fix4me', title='Fix4me')
+        .col-sm-12.col-lg-6
+          h2 Fix4me Verified Trade Supplier
+          button.btn.btn-success(type='button') View my profile
+        .col-sm-12.col-lg-3
+          p 127 completed jobs 
+            br
+            | 96% completion rate 
+            br
+            | Average Rating 4.8 Stars
+
+
+  section#jobphotos
+      .center-content.container
+        h2 Our Job Photos
+        .row.no-gutters
+          .col-md-4.col-sm-12.center-img
+            img(src='assets/images/jobphoto1.png', alt='Job Photo', title='Job Photo')
+          .col-md-4.col-sm-12.center-img
+            img(src='assets/images/jobphoto2.png', alt='Job Photo', title='Job Photo')
+          .col-md-4.col-sm-12.center-img
+            img(src='assets/images/jobphoto3.png', alt='Job Photo', title='Job Photo')
+          .col-md-4.col-sm-12.center-img
+            img(src='assets/images/jobphoto4.png', alt='Job Photo', title='Job Photo')
+          .col-md-4.col-sm-12.center-img
+            img(src='assets/images/jobphoto5.png', alt='Job Photo', title='Job Photo')
+          .col-md-4.col-sm-12.center-img
+            img(src='assets/images/jobphoto6.png', alt='Job Photo', title='Job Photo')
+          button.btn.btn-success(type='button') VIEW FULL GALLERY
+
+
+  section#tradeservices
+      .center-content.container-fluid
+        h2 Trade Services
+        .row
+          .col.d-flex.flex-wrap.justify-content-center
+            .trade-item.checked Air Conditioning/Heating
+            .trade-item Appliance New/Repairs
+            .trade-item.checked Asbestos Inspection
+            .trade-item.checked Asbestos Management
+            .trade-item Architecture
+            .trade-item Balustrudes
+            .trade-item Ashphalt Concreting
+            .trade-item Balustrades
+            .trade-item Bath Resurfacing
+            .trade-item Bathroom Renovations
+            .trade-item Bin Cleaning
+            .trade-item.checked Carpet Repair
+            .trade-item Blinds, Curtains, Awnings
+            .trade-item Bricklaying
+            .trade-item Building
+            .trade-item Building Consultancy or Certification
+            .trade-item Cabinets
+            .trade-item.checked Cabling - Phone/Data/TV
+
+        button.btn.btn-success(type='button')
+          i.fas.fa-angle-right
+          | VIEW ALL SERVICES
+
+
+  section#recentreviews
+      .center-content.container
+        h2 Our Recent Reviews
+        .row
+          .col-sm-12.col-lg-6
+            .rc-item
+              .rc-top
+                p.name John Doe
+                img(src="assets/images/ratings5.png", alt="5 Star Review", title="5 Star Review")
+              .rc-body
+                p.title Fixing windows and installing new door
+                p.description Psellus metus massa, auctor ut condimentum dictum, tincidunt nec arcu. Nam pharetra urna ac metus pellentesque porta. Praesent placerat tortor nec lacinia venenatis.“
+            //- rc-item
+          .col-sm-12.col-lg-6
+            .rc-item
+              .rc-top
+                p.name Jane Smith
+                img(src="assets/images/ratings5.png", alt="5 Star Review", title="5 Star Review")
+              .rc-body
+                p.title Install carpets in 2 rooms
+                p.description Sed varius dignissim augue at sodales. Sed non libero ut dolor feugiat fringilla at sed metus. Nunc mi ante, auctor fringilla et purus quis, pharetra blandit purus. 
+            //- rc-item
+        .row
+          .col-sm-12.col-lg-6
+            .rc-item
+              .rc-top
+                p.name Samuel L 
+                img(src="assets/images/ratings5.png", alt="5 Star Review", title="5 Star Review")
+              .rc-body
+                p.title Coodo, ornare ullamcorpern
+                p.description Gravida lorem nisi ac massa. Nunc dui odio, consequat ac odio at, facilisis pulvinar urna. Cras purus turpis, tincidunt vehicula libero commodo, ornare ullamcorper metus. 
+            //- rc-item
+          .col-sm-12.col-lg-6
+            .rc-item
+              .rc-top
+                p.name Peter Peterson
+                img(src="assets/images/ratings5.png", alt="5 Star Review", title="5 Star Review")
+              .rc-body
+                p.title Plios odo, ornare ullamaw eaol.
+                p.description Curabitur lobortis magna nulla, at tristique urna convallis ut. Vivamus iaculis metus non arcu viverra bibendum. Vestibulum efficitur, ex a vestibulum congue, eros nisi blandit dui,
+            //- rc-item
+
+        button.btn.btn-success(type='button')
+          i.fas.fa-angle-right
+          | VIEW ALL REVIEWS
+
+
+  section#ourserviceareas
+      .center-content.container
+        .row
+          .col 
+            h2 Our Service Areas
+            h3 Postcode: 2250
+            p Avoca Beach, Bensville, Bouddi, Copacabana, Davistown, Green Point, Kincumber, Kincumber South, Macmasters Beach, Picketts Valley, Saratoga, Yattalunga, Erina Heights, 
+              br
+              | Forresters Beach, North Avoca, Terrigal, Wamberal, Bucketty, Calga, Central Mangrove, East Gosford, Erina, Erina Fair, Glenworth Valley, Gosford, Greengrove, Holgate ...
+        .row  
+          .col.text-center
+            button.btn.btn-success(type='button')
+              i.fas.fa-plus
+              | EXPAND SERVICE AREAS
+
+
 
 block scripts
   // External Script goes here...
