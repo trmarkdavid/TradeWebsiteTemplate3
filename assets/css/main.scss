@@ -2,30 +2,50 @@
 
 $primary-font: 'Lato', sans-serif;
 $secondary-font: 'Roboto', sans-serif;
+$third-font: 'Open Sans', sans-serif;
 
 html {
     font-size: 62.5%;
     font-family: $primary-font;
 }
 
-header {
-    text-align: center;
-    padding: 40px;
-    border-bottom: 2px solid #c4c4c4;
-}
+.navbar {
+    padding: 3rem 4rem 1.5rem 4rem;
 
-nav .nav-link {
-    font-family: $primary-font;
-    font-size: 2rem;
-    font-weight: 900;
-    color: #727272;
-    padding: .2rem 3rem !important;
+    .nav-link {
+       font-family: $primary-font;
+       font-size: 2rem;
+       font-weight: 900;
+       text-align: right;
+       color: #02afce !important;
+       padding-left: 4rem !important;
+       padding-bottom: 0;
+   }
 }
 
 .boxshadow {
     -webkit-box-shadow: 0px 0px 9px 2px rgba(28,28,28,0.26);
     -moz-box-shadow: 0px 0px 9px 2px rgba(28,28,28,0.26);
     box-shadow: 0px 0px 9px 2px rgba(28,28,28,0.26);
+}
+
+/*===== Contact Us Section =====*/
+#contact-section {
+    background-color: #2b2b2b;
+    padding: 1rem 4rem;
+
+    label {
+        font-family: 'Arial', sans-serif;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        color: #FFF;
+
+        &:not(:last-child):after {
+            content:'|';
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+        }
+    }
 }
 
 /*===== Hero Section =====*/
@@ -42,20 +62,15 @@ nav .nav-link {
         flex-direction: column;
         align-items: center;
         margin: auto;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        padding-bottom: 12rem;
 
         h1 {
             font-family: $primary-font;
             font-weight: bold;
             font-size: 6rem;
             margin-bottom: 1rem;
-        }
-
-        h3 {
-            font-size: 3rem;
-            font-weight: 200;
+            @include breakpoint(sm) {
+                text-align: center;
+            }
         }
 
         .btn-success {
@@ -71,6 +86,7 @@ nav .nav-link {
             @include border-radius(0);
             @include breakpoint(sm) {
                 font-size: 1.5rem;
+                margin: auto;
             }
 
             img {
@@ -79,6 +95,56 @@ nav .nav-link {
 
             p {
                 margin-bottom: 0;
+            }
+        }
+
+        .intro {
+            font-family: $primary-font;
+            background-color: #FFF;
+            padding: 6rem;
+            margin-left: 4rem;
+
+            h2 {
+                font-size: 4rem;
+                font-weight: 300;
+                margin-bottom: 1.5rem;
+                color: #02afce;
+            }
+
+            p {
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+                color: #2f3b4c;
+                
+            }
+        }
+
+        .service-container {
+            justify-content: center;
+            margin-top: 7rem;
+            @include breakpoint(md) {
+                justify-content: space-between;
+            }
+            
+            .services {
+                font-family: $third-font;
+                background-color: #FFF;
+                color: #565656;
+                display: flex;
+                align-items: center;
+                margin-top: 2rem;
+                max-width: fit-content;
+
+                img {
+                    padding: 1rem;
+                }
+
+                p {
+                    font-size: 1.8rem;
+                    margin-right: 3rem;
+                    margin-bottom: 0;
+                    white-space: nowrap;
+                }
             }
         }
     }   
@@ -101,7 +167,7 @@ nav .nav-link {
         padding: 4rem 5rem;
         font-family: $secondary-font;
         @include breakpoint(md) {
-            margin: 9rem auto;
+            margin: 9rem 1.5rem;
         }
 
         img {

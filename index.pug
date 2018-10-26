@@ -2,10 +2,19 @@ extends ./layout/layout.pug
 
 block content
 
+
+  section#contact-section
+    .container-fluid
+      .row
+        label PHONE: 0413 666 888
+        label ADDRESS: 987 The Entrance Road, Erina, NSW 2250
+        label ABN: 37 123 870 260
+
+
   section#hero-section
-    .center-content.container
-      .row.w-100
-        .col-6
+    .center-content.container.p-0
+      .row.w-100.align-items-center
+        .col-sm-12.col-md-6.p-0
           h1 Sunny Coast Handyman
           button.btn.btn-success(type='button') 
             img.mx-auto(src='assets/images/checkbox.png', alt='Checkbox', title='Checkbox')
@@ -13,10 +22,34 @@ block content
               | Make a booking / 
               br
               | Request a quote
-        .col-6 X
+        //-col
+        .col-sm-12.col-md-6.p-0
+          .intro.boxshadow.d-none.d-sm-block
+            h2 Introduction
+            p Looking for a trustworthy, experienced and licensed Handyman on the Central Coast?
+            p Then look no further!
+            p Hi, I’m Ben from Sunny Coast Handyman Services, and I have been proudly servicing the Central Coast for just over 7 years. I am fully licensed and insured so you can feel confident when booking me for your next job.
+            p I am a family man who loves getting out for wave whenever I can, and spending time with my wife and 2 young kids.
+            p Call me a call to discuss your next job – I'd love to speak to you!
+        //-col
+      //-row
+      .row.w-100.service-container
+        .services.boxshadow
+          img(src='assets/images/ABNChecked.png', alt='ABN Checked', title='ABN Checked')
+          p ABN Checked
+        .services.boxshadow
+          img(src='assets/images/LicensedAndInsured.png', alt='Licensed and Insured', title='Licensed and Insured')
+          p Licensed and Insured
+        .services.boxshadow
+          img(src='assets/images/Fix4meVerified.png', alt='Fix4me Verified', title='Fix4me Verified')
+          p Fix4me Verified
+        .services.boxshadow
+          img(src='assets/images/EmergencyWork.png', alt='Emergency Work', title='Emergency Work')
+          p Emergency Work
+      //-rom
 
 
-  section#fix4meverified
+  section#fix4meverified.d-flex.justify-content-center
     .center-content.container.boxshadow
       .row.align-items-center.w-100
         .col-sm-12.col-lg-3
