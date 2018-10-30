@@ -3,7 +3,7 @@
 # using 'bower' or 'npm install'. So just download the source directly from the
 # 'Bootstrap' website(http://getbootstrap.com).
 # ------------------------------------------------------------------------------
-# Author of this note: Rodan Luzuriaga
+# Author of this note: Mark Robert David
 ################################################################################
 
 
